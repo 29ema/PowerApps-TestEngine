@@ -100,6 +100,7 @@
   <ItemGroup>
     <ExcludedAssemblies Include="..\..\bin\$(configuration)\PowerAppsTestEngineWrapper\PowerAppsTestEngineWrapper.dll" />
     <FilesToPack Include="..\..\bin\$(configuration)\PowerAppsTestEngineWrapper\*.dll" Exclude="@(ExcludedAssemblies)" />
+    <None Remove="TestSuite.fx.yaml" />
     <None Include="@(FilesToPack)">
       <Pack>true</Pack>
       <PackagePath>lib\$(TargetFramework)\</PackagePath>
@@ -111,7 +112,7 @@
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </None>
     <None Update="config.json">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
   </ItemGroup>
 </Project>

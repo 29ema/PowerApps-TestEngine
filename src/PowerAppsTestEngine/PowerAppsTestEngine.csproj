@@ -24,6 +24,10 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <None Remove="TestSuite.fx.yaml" />
+  </ItemGroup>
+
+  <ItemGroup>
     <ProjectReference Include="..\Microsoft.PowerApps.TestEngine\Microsoft.PowerApps.TestEngine.csproj" PrivateAssets="all" />
     <ProjectReference Include="..\testengine.auth.certificatestore\testengine.auth.certificatestore.csproj" PrivateAssets="all" />
     <ProjectReference Include="..\testengine.common.user\testengine.common.user.csproj" PrivateAssets="all" />
@@ -47,6 +51,7 @@
     <GeneratePackageOnBuild>False</GeneratePackageOnBuild>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
     <GenerateBindingRedirectsOutputType>true</GenerateBindingRedirectsOutputType>
+    <SonarQubeExclude>True</SonarQubeExclude>
   </PropertyGroup>
 
   <ItemGroup>

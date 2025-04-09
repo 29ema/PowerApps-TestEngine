@@ -1,9 +1,9 @@
 {
-  "environmentId": "",
-  "tenantId": "",
-  "testPlanFile": "",
-  "outputDirectory": "",
-  "logLevel": "",
-  "domain":  "",
+  "environmentId": "c5aff6b1-c647-eb30-9500-9002e6f77d43",
+  "tenantId": "f57725e7-e2d6-4046-9c33-4a1147ea7187",
+  "testPlanFile": "C:\\Tests\\tests.yaml",
+  "outputDirectory": "TestResults",
+  "logLevel": "Information",
+  "domain": "",
   "queryParams": ""
 }

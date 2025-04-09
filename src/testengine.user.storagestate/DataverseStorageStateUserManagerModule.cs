@@ -138,7 +138,8 @@ namespace testengine.user.storagestate
 
                 var protectedValue = _userProtector.Protect(content);
 
-                StoreValue(_organizationService, machine, GetTestPersonaUserName(), protectedValue);
+                StoreValue(_organizationService, machine, GetTestPersona
+                    (), protectedValue);
             };
 
             _setup = true;
