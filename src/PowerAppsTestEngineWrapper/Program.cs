@@ -43,7 +43,7 @@ namespace PowerAppsTestEngineWrapper
             var inputOptions = new ConfigurationBuilder()
                 .SetBasePath(Directory.GetCurrentDirectory())
                 .AddJsonFile("config.dev.json", true)
-                .AddCommandLine(args, switchMappings)
+                //.AddCommandLine(args, switchMappings)
                 .AddJsonFile("config.json", true)
                 .Build()
                 .Get<InputOptions>();
